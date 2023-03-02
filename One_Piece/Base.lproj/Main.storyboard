@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ElF-LU-oCt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XaZ-xZ-zc0">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Vr5-R7-hYk" customClass="ViewController" customModule="One_Piece" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHX-bK-VEo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monkey D. Luffy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NI2-rk-6Hu">
+                                <rect key="frame" x="113.66666666666669" y="97" width="166" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="3Qr-OI-vSA"/>
+                                    <constraint firstAttribute="width" secondItem="NI2-rk-6Hu" secondAttribute="height" multiplier="166:29" id="3lh-De-bBu"/>
+                                    <constraint firstAttribute="height" constant="29" id="8eX-41-u06"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Luffyxxx" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-Lb-uH7">
+                                <rect key="frame" x="76.666666666666686" y="169" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="CAC-Ky-5k2"/>
+                                    <constraint firstAttribute="width" secondItem="IKg-Lb-uH7" secondAttribute="height" multiplier="15:8" id="fHU-VY-iPR"/>
+                                    <constraint firstAttribute="width" constant="240" id="p52-Mv-N25"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="CtN-TZ-3ei">
+                                <rect key="frame" x="106" y="351" width="181" height="219.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5E-Fv-eIZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="C5C-Fy-Z0v"/>
+                                            <constraint firstAttribute="width" secondItem="F5E-Fv-eIZ" secondAttribute="height" multiplier="181:35" id="dPB-Fi-vWN"/>
+                                            <constraint firstAttribute="width" constant="181" id="pXm-4A-upK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Weakness of Luffy"/>
+                                        <connections>
+                                            <segue destination="uyL-9k-05h" kind="show" id="mhx-NH-Bih"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-nT-9Ii">
+                                        <rect key="frame" x="0.0" y="83" width="181" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fun Fact about Luffy"/>
+                                        <connections>
+                                            <segue destination="nTZ-Uk-6ab" kind="show" id="xsh-Ia-SHX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukL-w6-oyn">
+                                        <rect key="frame" x="0.0" y="165.33333333333337" width="181" height="54.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Who is Luffy's Best Friend"/>
+                                        <connections>
+                                            <segue destination="Kb3-mo-25y" kind="show" id="bXk-Zc-Ex3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="F5E-Fv-eIZ" firstAttribute="width" secondItem="F5E-Fv-eIZ" secondAttribute="height" multiplier="181:35" id="yHP-F5-479"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5V1-hF-krw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IKg-Lb-uH7" firstAttribute="centerX" secondItem="NI2-rk-6Hu" secondAttribute="centerX" id="6pp-3b-hWW"/>
+                            <constraint firstItem="CtN-TZ-3ei" firstAttribute="centerX" secondItem="OHX-bK-VEo" secondAttribute="centerX" id="B2N-C6-Gwg"/>
+                            <constraint firstItem="IKg-Lb-uH7" firstAttribute="top" secondItem="NI2-rk-6Hu" secondAttribute="bottom" constant="43" id="BPp-FC-v2y"/>
+                            <constraint firstItem="IKg-Lb-uH7" firstAttribute="top" secondItem="OHX-bK-VEo" secondAttribute="top" constant="169" id="bzH-U8-1pT"/>
+                            <constraint firstItem="CtN-TZ-3ei" firstAttribute="top" secondItem="IKg-Lb-uH7" secondAttribute="bottom" constant="54" id="lC0-g3-1VF"/>
+                            <constraint firstItem="IKg-Lb-uH7" firstAttribute="centerX" secondItem="OHX-bK-VEo" secondAttribute="centerX" id="xNx-jH-cE8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s0v-eE-tFH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bh-v8-WQq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.68702290076328" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nRV-EA-fRc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="nTZ-Uk-6ab" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hGJ-0n-Enn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LuffyFunFact" translatesAutoresizingMaskIntoConstraints="NO" id="WcG-OF-MKO">
+                                <rect key="frame" x="76" y="175" width="240" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsJ-Qm-NRl">
+                                <rect key="frame" x="40" y="357" width="312" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">One fun fact about Luffy in One Piece is that his design was actually inspired by a pirate called "Edward Teach," who was also known as "Blackbeard." This can be seen in Luffy's black pirate hat and his overall appearance, which shares some similarities with historical depictions of Blackbeard. Another interesting fact is that Luffy's favorite food is meat, and he has a voracious appetite, often eating large amounts of food in a single sitting. This trait is also reflected in his fighting style, which often involves stretching and expanding his body like a rubber band to attack his opponents.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.42352941179999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP2-hE-Vyw">
+                                <rect key="frame" x="106" y="97" width="181" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fun Fact about Luffy"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LtF-Mv-MS9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7fd-va-dCp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qt7-jr-HPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.3053435114502" y="-407.04225352112678"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v9u-H7-1Sj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Kb3-mo-25y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZcP-Cm-zwx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LuffyZoro" translatesAutoresizingMaskIntoConstraints="NO" id="R3C-Ix-QOR">
+                                <rect key="frame" x="76" y="175" width="240" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-ol-g9X">
+                                <rect key="frame" x="40" y="357" width="312" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Luffy's best friend in One Piece is considered to be Roronoa Zoro, who is also a member of his crew, the Straw Hat Pirates. They share a strong bond and mutual respect for each other, and have been through many adventures and battles together throughout the series.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.42352941179999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-NO-s8p">
+                                <rect key="frame" x="85" y="97" width="224" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Who is Luffy's Best Friend"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1mC-4X-aZ5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uHE-1z-Mwr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4A-Cx-uKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qX7-ju-wWs">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="uyL-9k-05h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NDg-LR-HDU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WeakLuffy" translatesAutoresizingMaskIntoConstraints="NO" id="QUx-xM-BIC">
+                                <rect key="frame" x="76" y="175" width="240" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luffy's weakness in One Piece is vulnerability to non-physical attacks and exploitation of his rubber-like devil fruit powers." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E23-2d-YFm">
+                                <rect key="frame" x="40" y="357" width="312" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.42352941179999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-Fc-DVw">
+                                <rect key="frame" x="114" y="97" width="165" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Weakness of Luffy"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bfK-1j-VM2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9qC-cX-qmR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IuB-E2-dCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475.5725190839694" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wFK-Ea-Lab">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ElF-LU-oCt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="KRR-fp-K5Z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U5j-Hg-WQv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vr5-R7-hYk" kind="relationship" relationship="rootViewController" id="4nn-uP-sgd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaK-ZD-4KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.030534351145036" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LuffyFunFact" width="500" height="283"/>
+        <image name="LuffyZoro" width="299" height="168"/>
+        <image name="Luffyxxx" width="533" height="300"/>
+        <image name="WeakLuffy" width="499" height="252"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
