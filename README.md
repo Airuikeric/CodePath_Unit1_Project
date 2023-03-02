@@ -2,7 +2,7 @@
 
 Submitted by: **Huajian Chen**
 
-**One_Piece** is an app that introduces ... [TODO] 
+**One_Piece** is an app that introduces everything about Luffy.
 
 Time spent: **5** hours spent in total
 
